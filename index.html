@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Service Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="background-animation"></canvas>
+    <div class="container">
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Awesome Service</h1>
+                <p class="subtitle">We provide top-notch solutions for your needs</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+            <div class="hero-background">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We're a <span class="highlight">passionate team</span> of innovators, blending creativity with technical expertise to deliver <span class="highlight">cutting-edge solutions</span>. Our mission: transform complex challenges into elegant, user-centric experiences that exceed expectations.</p>
+            <div class="skills">
+                <span class="skill">Web Dev</span>
+                <span class="skill">UI/UX</span>
+                <span class="skill">Mobile</span>
+                <span class="skill">Cloud</span>
+                <span class="skill">AI</span>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Innovative Solutions</h3>
+                    <p>Transforming ideas into reality, one pixel at a time.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Strategic Consulting</h3>
+                    <p>Navigating the digital landscape with expert guidance.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cutting-Edge Development</h3>
+                    <p>Crafting tomorrow's technology with today's code.</p>
+                </div>
+                <div class="service-card">
+                    <h3>User-Centric Design</h3>
+                    <p>Creating experiences that users fall in love with.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; <span id="current-year"></span> Your Company Name. All rights reserved.</p>
+                    <p>Email: <a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Designed and developed with ❤️ by Gabu</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentYearSpan = document.getElementById("current-year");
+            currentYearSpan.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
+
